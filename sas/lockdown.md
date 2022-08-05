@@ -6,13 +6,15 @@ Lockdown has been around for a while, at least officially documented since SAS 9
 To allow specific file directory locations on a server, the following configuration changes should be made:
 
 1. Create a new file and add the paths you wish to whitelist from LOCKDOWN.
-		/opt/sas/[tenant]/config/etc/lockdown/whitelist.txt
-			/home
-			/tmp
-			/sso/data
-			/sso/project
-			/sastemp
-			/opt/sas/spre/home/share/refdata/qkb
+
+<details><summary>/opt/sas/[tenant]/config/etc/lockdown/whitelist.txt</summary>
+	/home
+    /tmp
+	/sso/data
+	/sso/project
+	/sastemp
+    /opt/sas/spre/home/share/refdata/qkb
+</details>
 
 2. Edit the compsrv and workspaceserver `autoexec_usermods.sas` file:
  
