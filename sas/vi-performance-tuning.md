@@ -20,50 +20,37 @@ export CONSUL_HTTP_TOKEN=$(sudo cat /opt/sas/viya/config/etc/SASSecurityCertific
 
 svi-alert
 
-    ```other
     config/svi-alert/jvm/java_option_xmx=-Xmx12g
-    ```
 
-#### svi-datahub
+svi-datahub
 
-    ```other
     config/svi-datahub/jvm/java_option_xmx=-Xmx12g
     config/svi-datahub/spring.datasource.tomcat.maxActive=200 
-    ```
 
-#### svi-indexer
+svi-indexer
 
-    ```
     config/svi-indexer/jvm/java_option_xmx=-Xmx12g
-    ```
 
-#### files
+files
 
-    ```
     config/files/jvm/java_option_xmx=-Xmx12g
     config/files/sas.files/maxFileSize=1073741824
     config/files/spring.datasource.tomcat.maxActive=100 (Default)
-    ```
 
-#### folders
+folders
 
-    ```
     config/folders/jvm/java_option_xmx=-Xmx12g
     config/folders/spring.datasource.tomcat.maxActive=100 (Default)
-    ```
 
-#### cacheserver
+cacheserver
 
-    ```
     config/cacheserver/jvm/java_option_xms=-Xms2g
     config/cacheserver/jvm/java_option_xmx=-Xmx8g
-    ```
 
-#### saslogon
+saslogon
 
-    ```
     config/SASLogon/jvm/java_option_xmx=-Xmx1024m
-    ```
+
 </details>
   
 ## Deployment / Config File
