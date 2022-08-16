@@ -4,6 +4,9 @@ List comma separated items
 
     id | tr ',' '\n' | grep -i value
 
+Find and replace terms in multiple files
+
+    find $pwd -type f -name '*.sas' | xargs sed -i 's/OLD/NEW/g'
 ## Searching
 
 Find words (OR)
