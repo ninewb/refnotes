@@ -15,10 +15,7 @@ In short, most data (data at rest) is not really encrypted unless user implement
 
 The Viya deployment has set the correct ownership and permission to assure its functionality.  Beneath excerpt from my test server and the permission is only permissive by owner only.
 
-```other
-$ ls -ld /opt/sas/viya/config/data/sasdatasvrc/postgres/node0
-drwx——— 19 sas sas 4096 Apr 25 13:43 /opt/sas/viya/config/data/sasdatasvrc/postgres/node0
-```
-
+    $ ls -ld /opt/sas/viya/config/data/sasdatasvrc/postgres/node0
+    drwx——— 19 sas sas 4096 Apr 25 13:43 /opt/sas/viya/config/data/sasdatasvrc/postgres/node0
 
 Data files are binary files.  Data files generated in above folder is only accessible by owner, i.e. sas user
