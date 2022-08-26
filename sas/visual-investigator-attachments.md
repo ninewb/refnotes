@@ -19,3 +19,17 @@ The Viya deployment has set the correct ownership and permission to assure its f
     drwx——— 19 sas sas 4096 Apr 25 13:43 /opt/sas/viya/config/data/sasdatasvrc/postgres/node0
 
 Data files are binary files.  Data files generated in above folder is only accessible by owner, i.e. sas user
+
+```
+-- File Metadata
+SELECT content_id FROM files.file_meta
+    WHERE file_id = '1e12462e-79a2-45fc-9b30-54af3258cce6';
+
+-- Attachment
+SELECT * FROM files.file_content
+    WHERE content_id = '35c87d2d-f16d-41e0-8ee6-87a7dbe53756';
+
+-- Visual Investigator Relationship
+SELECT * FROM fdhdata.dh_file
+    WHERE file_id = '1e12462e-79a2-45fc-9b30-54af3258cce6';
+```
