@@ -1,6 +1,7 @@
 # Master Sheet
 
 - [2023-07-17 - Prometheus and Grafana](activity/2023-07-17.md)
+- [2023-07-19 - Two CPU Tests](activity/2023-07-19.md)
 
 ## Focus
 
@@ -20,3 +21,17 @@ The agents seem to be restricted by region, the following [link](https://learn.m
 - [EEC Sizing - Run Time - Test Case Planning](https://rndconfluence.sas.com/pages/viewpage.action?spaceKey=~mtllsc&title=EEC+Sizing+-+Run+Time+-+Test+Case+Planning)
 - [goODE Performance Runs](https://rndconfluence.sas.com/display/FSIDA/goODE+Performance+Runs)
 - [Benchmark Brief](https://rndjira.sas.com/browse/DOCMNTATION-1154)
+
+## Performance Assurance
+
+- What is it
+- Why are we doing it
+- Major players
+  - We are partnering with EEC, 
+
+- Technolgoy involved and focus areas
+  - ADO: IaC, Automation
+  - Locust: Performance testing
+
+- Showcase
+  - Our Analysis process
