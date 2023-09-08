@@ -11,4 +11,17 @@ Need to outline the process that is taken in the development and execution of th
   - how ADF kicks off and triggers ADO
   - how pipeline conditions work
 - Create config map to outline manifest modifying
-- 
+
+
+** Create App Registration
+** Give access to ACR from SCRSFD app registration
+
+## Azure Data Factory
+
+https://www.youtube.com/watch?v=qvyylliksdE
+
+- Create an Azure Data Factory Resource
+- Load ADF Studio
+  - Create a new pipeline
+  - Add a "Move and Transform - Copy Data" activity
+  - 
