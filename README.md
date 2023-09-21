@@ -1,13 +1,14 @@
-# Master Sheet
+# Reference Notes Workspace
 
-- [2023-07-17 - Prometheus and Grafana](activity/2023-07-17.md)
-- [2023-07-19 - Two CPU Tests](activity/2023-07-19.md)
 
 ## Focus
 
-### Prometheus and Grafana
+- [Viya 4 - Multi-tenancy](sas/viya4-multi-tenancy.md)
+- 
 
-- Analyze and familiarize myself with [grafana](tools/grafana.md) and [prometheus](tools/prometheus.md)
+## Projects
+
+
 
 ## Backlog
 
@@ -22,16 +23,3 @@ The agents seem to be restricted by region, the following [link](https://learn.m
 - [goODE Performance Runs](https://rndconfluence.sas.com/display/FSIDA/goODE+Performance+Runs)
 - [Benchmark Brief](https://rndjira.sas.com/browse/DOCMNTATION-1154)
 
-## Performance Assurance
-
-- What is it
-- Why are we doing it
-- Major players
-  - We are partnering with EEC, 
-
-- Technolgoy involved and focus areas
-  - ADO: IaC, Automation
-  - Locust: Performance testing
-
-- Showcase
-  - Our Analysis process
