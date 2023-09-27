@@ -101,3 +101,31 @@ Error: stat site-onboard.yaml: no such file or directory
 sed: can't read site-onboard.yaml: No such file or directory
 error: the path "site-onboard.yaml" does not exist
 Pausing while the Tenant Job initiates
+
+
+/sas/viya4-deployment/deployments/nick-aml-24823-aks/sas-aml/sas-bases/examples/cas/create
+chmod +x create-cas-server.sh
+./create-cas-server.sh -t tenant1 -o /sas/viya4-deployment/deployments/nick-aml-24823-aks/sas-aml/site-config -b 0 -w 2
+
+Error: accumulating resources: accumulation err='accumulating resources from 'generation': '/tmp/ansible.06n_4ncp/orchestration/work/deploy/resources/generation' 
+
+must resolve to a file': recursed accumulation of path '/tmp/ansible.06n_4ncp/orchestration/work/deploy/resources/generation': 
+
+accumulating resources: accumulation err='accumulating resources from 'sas-bases/overlays/sas-workload-orchestrator': evalsymlink failure on '/tmp/ansible.06n_4ncp/orchestration/work/deploy/resources/generation/sas-bases/overlays/sas-workload-orchestrator' : lstat /tmp/ansible.06n_4ncp/orchestration/work/deploy/resources/generation/sas-bases/overlays/sas-workload-orchestrator: no such file or directory': must build at directory: not a valid directory: evalsymlink failure on '/tmp/ansible.06n_4ncp/orchestration/work/deploy/resources/generation/sas-bases/overlays/sas-workload-orchestrator' : lstat /tmp/ansible.06n_4ncp/orchestration/work/deploy/resources/generation/sas-bases/overlays/sas-workload-orchestrator: no such file or directory
+    The deploy command failed
+
+    TASK [vdm : Deploy - Deploy SAS Viya] ******************************************
+task path: /viya4-deployment/roles/vdm/tasks/deploy.yaml:51
+failed: [localhost] (item={'path': '/tmp/ansible.fmt1e619/orchestration/manifests/sas-aml-sasdeployment.001.yaml', 'mode': '0644', 'isdir': False, 'ischr': False, 'isblk': False, 'isreg': True, 'isfifo': False, 'islnk': False, 'issock': False, 'uid': 1001, 'gid': 127, 'size': 219483, 'inode': 4979818, 'dev': 45, 'nlink': 1, 'atime': 1695818807.9141467, 'mtime': 1695818807.9141467, 'ctime': 1695818807.9141467, 'gr_name': '', 'pw_name': 'viya4-deployment', 'wusr': True, 'rusr': True, 'xusr': False, 'wgrp': False, 'rgrp': True, 'xgrp': False, 'woth': False, 'roth': True, 'xoth': False, 'isuid': False, 'isgid': False}) => changed=true 
+  ansible_loop_var: item
+  cmd:
+  - orchestration
+  - deploy
+  - --namespace
+  - sas-aml
+  - --sas-deployment-cr
+  - /tmp/ansible.fmt1e619/orchestration/manifests/sas-aml-sasdeployment.001.yaml
+  delta: '0:00:27.638354'
+  end: '2023-09-27 12:47:19.555731'
+  invocation:
+    module_args:
