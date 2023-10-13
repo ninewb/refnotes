@@ -1,0 +1,13 @@
+{
+    "zfce": {
+        "repos": {
+            "azure": [],
+            "github": [
+                "dotfiles",
+                "refnotes",
+                "utils"
+            ],
+            "gitlab": []
+        }
+    }       
+}
