@@ -1,13 +1,20 @@
 {
     "zfce": {
-        "repos": {
-            "azure": [],
+        "projects": {
+            "ado": [
+                "https://FSIOPS@dev.azure.com/FSIOPS/FSIPerformanceAssurance/_git/fsi-pac-azure",
+                "https://FSIOPS@dev.azure.com/FSIOPS/FSIPerformanceAssurance/_git/viya-isolated-container",
+            ],
             "github": [
-                "dotfiles",
-                "refnotes",
-                "utils"
+                "https://github.com/ninewb/dotfiles.git",
+                "https://github.com/ninewb/refnotes.git",
+                "https://github.com/ninewb/utils.git"
             ],
             "gitlab": []
+        },
+        "pat": {
+            "ado": "",
+            "github": ""
         }
     }       
 }
